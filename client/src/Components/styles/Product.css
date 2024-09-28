@@ -1,0 +1,38 @@
+.cardText{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 450;
+}
+
+.cardbtn{
+    background-color: green !important;
+    border:2px solid green !important;
+    color:white;
+    height:40px;
+    padding: 0px 24px;
+    border-radius: 1rem;
+    margin-bottom: 2rem !important;
+    position:absolute;
+    bottom: 0;
+}
+.card{
+    width: 20rem;
+    margin: 1.5rem;
+    padding: 1.25rem;
+    border: 1px solid black !important ;
+    z-index: -1;
+    height: 35rem;
+}
+.price{
+    font-size: 1.5rem !important;
+}
+.cardImg{
+    width: 85%;
+    height: 15rem;
+    object-fit: scale-down;
+    align-self: center;
+
+}
+.cardbody{
+    flex: 0.7 !important;
+}

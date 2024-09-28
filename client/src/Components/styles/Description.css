@@ -1,0 +1,28 @@
+.desctext{
+    background-color:rgb(0, 195, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    flex: 0.5;
+}
+h3{
+    font-size:4.3rem !important;
+    margin-bottom: 1.25rem !important;
+}
+p{
+    font-size: 2.5rem;
+}
+.desc{
+    /* display: flex; */
+    padding:2rem;
+    align-items: center;
+    position: relative;
+    height: 25rem;
+    background-color:rgb(0, 195, 255);
+    
+}
+/* .descimg{
+    flex: 0.5;
+    
+} */

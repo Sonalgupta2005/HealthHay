@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+}
+@media only screen and (max-width:40em){
+  .navbtn1{
+    display: none;
+  }
+  ul{
+    display: none;
+  }
+  .search{
+    display: none;
+  }
+  .navlist2{
+   opacity: 0;
+  }
+  .side{
+    display: block !important;
+  }
+}
+.body{
+ min-height: 100vh;
+ overflow: scroll;
+}
+::-webkit-scrollbar{
+  display: none;
+}
