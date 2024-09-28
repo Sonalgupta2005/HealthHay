@@ -122,3 +122,10 @@ ul li a:hover{
     height: 3rem;
     width: 2.rem;
 }
+.getappicon{
+    font-size: 1.95rem !important;
+    opacity: 0.8;
+}
+.getappicon:hover{
+    opacity: 1;
+}
