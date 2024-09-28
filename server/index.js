@@ -8,7 +8,7 @@ const productRoutes=require("./Routes/productRoute.js");
 const cors=require("cors");
 const { notFound, errorHandler } = require("./middlewares/errorHandler.js");
 
-app.use(cors({ origin: 'https://health-ncns7xh8c-sonal-guptas-projects-0f89a76a.vercel.app' }));
+app.use(cors({ origin: 'https://healthhay.vercel.app/' }));
 
 dotenv.config();
 app.use(express.json())
