@@ -7,7 +7,7 @@ function DeleteProduct() {
 
   useEffect(() => {
     // Simulate a delete request
-    fetch(`http://localhost:5000/products/${id}`, { method: 'DELETE' })
+    fetch(`https://healthhay-server.onrender.com/products/${id}`, { method: 'DELETE' })
       .then(response => {
         if (response.ok) {
           navigate('/products');

@@ -15,7 +15,7 @@ function Show() {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/products/${id}`);
+        const response = await axios.get(`https://healthhay-server.onrender.com/products/${id}`);
         setProduct(response.data);
         
       } catch (err) {

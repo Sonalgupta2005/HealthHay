@@ -32,7 +32,7 @@ function Login() {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/user/login",
+        "https://healthhay-server.onrender.com/user/login",
         data,
         config
       );

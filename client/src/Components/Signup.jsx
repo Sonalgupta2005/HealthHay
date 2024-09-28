@@ -27,7 +27,7 @@ function Signup() {
       };
       console.log("Sending data",data)
         const response = await axios.post(
-          "http://localhost:5000/user/signup",
+          "https://healthhay-server.onrender.com/user/signup",
           data,config
         );
         console.log(response);

@@ -48,7 +48,7 @@ function Create() {
                 };
           
                 const response = await axios.post(
-                  "http://localhost:5000/products",
+                  "https://healthhay-server.onrender.com/products",
                   product,config
                 );navigate("/products");
                 setLoading(false);

@@ -14,7 +14,7 @@ function ProductTab() {
     const [filteredProducts, setFilteredProducts] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/products')
+        axios.get('https://healthhay-server.onrender.com/products')
             .then(response => {
                 setProducts(response.data);
                 setFilteredProducts(response.data);
