@@ -2,9 +2,6 @@
   margin: 0;
 }
 @media only screen and (max-width:40em){
-  #getappicon{
-    display: block !important;
-  }
 
   .navbtn2{
     display: none;
@@ -29,4 +26,7 @@
 }
 ::-webkit-scrollbar{
   display: none;
+}
+.getappicon{
+  display: block !important;
 }

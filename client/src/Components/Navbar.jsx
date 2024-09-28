@@ -18,7 +18,7 @@ function Navbar() {
           <div>
           <motion.button whileHover={{scale:1.02}} className='navbtn1' onClick={()=>navigate("/products")}>Find Products</motion.button>
           <motion.button whileHover={{scale:1.02}} className='navbtn2'>Download App</motion.button>
-          <GetAppIcon id='getappicon'/>
+          <GetAppIcon className='getappicon'/>
           </div>
           
         </div>
