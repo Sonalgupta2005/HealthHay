@@ -4,6 +4,7 @@ import Button from '@mui/material/Button';
 import "./styles/Navbar.css"
 import { useNavigate } from 'react-router-dom';
 import { motion } from "framer-motion";
+import GetAppIcon from '@mui/icons-material/GetApp';
 
 function Navbar() {
     const navigate=useNavigate();
@@ -17,6 +18,7 @@ function Navbar() {
           <div>
           <motion.button whileHover={{scale:1.02}} className='navbtn1' onClick={()=>navigate("/products")}>Find Products</motion.button>
           <motion.button whileHover={{scale:1.02}} className='navbtn2'>Download App</motion.button>
+          <GetAppIcon className='getappicon'/>
           </div>
           
         </div>

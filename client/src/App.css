@@ -2,8 +2,11 @@
   margin: 0;
 }
 @media only screen and (max-width:40em){
-  .navbtn1{
+  .navbtn2{
     display: none;
+  }
+  .getappicon{
+    display: inline;
   }
   ul{
     display: none;
