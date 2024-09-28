@@ -1,6 +1,6 @@
 const User = require("../models/userModel");
 const wrapAsync=require("../utils/wrapAsync");
-const generateToken = require("../Config/generateToken");
+const generateToken = require("../config/generateToken");
 
 module.exports.login = wrapAsync(async(req, res) => {
     const { email, password } = req.body;
