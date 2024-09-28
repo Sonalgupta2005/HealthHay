@@ -2,12 +2,14 @@
   margin: 0;
 }
 @media only screen and (max-width:40em){
+  #getappicon{
+    display: block !important;
+  }
+
   .navbtn2{
     display: none;
   }
-  .getappicon{
-    opacity: 1;
-  }
+  
   ul{
     display: none;
   }
