@@ -6,7 +6,7 @@
     display: none;
   }
   .getappicon{
-    display: inline-block;
+    display: block;
   }
   ul{
     display: none;
