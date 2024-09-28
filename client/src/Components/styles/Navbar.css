@@ -123,5 +123,5 @@ ul li a:hover{
     width: 2.rem;
 }
 .getappicon{
-    display: none;
+    display: none !important;
 }
