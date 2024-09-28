@@ -19,6 +19,9 @@
   .side{
     display: block !important;
   }
+  .getappicon{
+    display: inline;
+  }
 }
 .body{
  min-height: 100vh;
@@ -26,7 +29,4 @@
 }
 ::-webkit-scrollbar{
   display: none;
-}
-.getappicon{
-  display: block !important;
 }
