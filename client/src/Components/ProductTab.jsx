@@ -5,6 +5,7 @@ import Navbar2 from './Navbar2'
 import Navbar3 from './Navbar3'
 import Footer from './Footer'
 import axios from 'axios'
+import { Backdrop, CircularProgress } from '@mui/material'
 
 
 function ProductTab() {
@@ -12,8 +13,10 @@ function ProductTab() {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [searchQuery, setSearchQuery] = useState('');
     const [filteredProducts, setFilteredProducts] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
         axios.get('https://healthhay-server.onrender.com/products')
             .then(response => {
                 setProducts(response.data);
@@ -22,6 +25,7 @@ function ProductTab() {
             .catch(error => {
                 console.error('There was an error fetching the data!', error);
             });
+        setLoading(false);
     }, []);
 
     useEffect(() => {
@@ -46,6 +50,12 @@ function ProductTab() {
 
     return (
         <>
+        <Backdrop
+        sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}
+        open={loading}
+      >
+        <CircularProgress color="secondary" />
+      </Backdrop>
         <div className='body'>
         <Navbar2 onSearch={setSearchQuery} onCategoryChange={setSelectedCategory}/>
         <Navbar3 onCategoryChange={setSelectedCategory} />
