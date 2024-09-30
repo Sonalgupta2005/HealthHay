@@ -21,11 +21,12 @@ function ProductTab() {
             .then(response => {
                 setProducts(response.data);
                 setFilteredProducts(response.data);
+                setLoading(false);
             })
             .catch(error => {
                 console.error('There was an error fetching the data!', error);
             });
-        setLoading(false);
+        
     }, []);
 
     useEffect(() => {
